@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: medium;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 auto;
+    width: 90%;
+    padding: 2rem 0px 0px;
+    gap: 2rem;
+    background-color: #EDEFEE;
+    font-family: 'Poppins', 'Roboto', sans-serif;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    padding: 0px 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header {
+    align-self: center;
+}
+
+nav {
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+    margin: auto;
+    width: 60vw;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+
+a:hover {
+    background-color: white;
+    color: grey;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.promotion p {
+    padding: 5px;
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+  }
+
+.info-col-1 {
+    min-height: 40vh;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+}
+
+.info-col-3 {
+    display: flex;
+    min-height: 120vh;
+    gap: 2rem;
+}
+
+article {
+    flex: 1;
+}
+
+.info-col-3 p {
+    padding: 1rem 0;
+}
+
+.info-col-1 p {
+    padding: 2rem 2rem;
+}
+
+.promotion {
+    border-radius: 5px;
+    padding: 0.1rem;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url("../images/promotion-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h2+img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+}
+
+.menu, .book, .operation {
+    position: relative;
+    background-color: grey;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+article a, table {
+    text-decoration: none;
+    padding: 0.3rem;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.2rem;
+}
+
+table {
+    left: 0.7rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer {
+    border-top: 3px solid;
+    padding: 0.5rem 0px;
+}
+
+@media only screen and (min-width: 1300px) {
+    :root {
+        font-size: large;
+    }
+
+    .info-col-1 {
+        min-height: 30vh;
+    }
+    
+    .info-col-3 {
+        min-height: 80vh;
+    }
+
+  }
+
+
+
+
